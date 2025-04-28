@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoupleSync - Relationship Problem Solving</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CoupleSync</h1>
+        <p>Solving relationship issues, together.</p>
+    </header>
+
+    <main>
+        <!-- Conflict Cards -->
+        <section id="conflict-cards">
+            <div class="card">
+                <h2>Communication Issues</h2>
+                <p>How do you communicate during tough times?</p>
+                <button onclick="startGame('communication')">Start Game</button>
+            </div>
+            <div class="card">
+                <h2>Trust Issues</h2>
+                <p>What helps build trust in your relationship?</p>
+                <button onclick="startGame('trust')">Start Game</button>
+            </div>
+        </section>
+
+        <!-- Emotional Input Wheel -->
+        <section id="emotions">
+            <h2>Emotional Input</h2>
+            <input type="range" id="emotion-slider" min="1" max="10" value="5">
+            <p>Emotion Level: <span id="emotion-level">5</span></p>
+        </section>
+
+        <!-- Compatibility Tracker -->
+        <section id="compatibility">
+            <h2>Compatibility Score</h2>
+            <p>Current Compatibility Score: <span id="compatibility-score">85</span>%</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CoupleSync. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
